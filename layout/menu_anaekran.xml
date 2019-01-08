@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_yon_onay"
+        android:title="Paylaşım Onay Verme"
+        android:visible="false" />
+    <item
+        android:id="@+id/menu_anaekran_paylastiklarim"
+        android:title="Paylaştıklarım"></item>
+    <item
+        android:id="@+id/menu_anaekran_cevaplar"
+        android:title="İsteklerim"></item>
+    <item
+        android:id="@+id/menu_anaekran_istekler"
+        android:title="Talep Edilenler"></item>
+    <item
+        android:id="@+id/menu_anaekran_hesabim"
+        android:title="Hesabım"></item>
+    <item
+        android:id="@+id/menu_anaekran_toplist"
+        android:title="Top List"></item>
+    <item
+        android:id="@+id/menu_anaekran_hakkinda"
+        android:title="Hakkında"></item>
+    <item
+        android:id="@+id/menu_anaekran_cikis"
+        android:title="Oturumu Kapat"></item>
+</menu>
