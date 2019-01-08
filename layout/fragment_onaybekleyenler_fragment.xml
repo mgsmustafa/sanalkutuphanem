@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lbl_showdialog_tarihgir"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b6"
+    tools:layout_editor_absoluteY="81dp">
+    <Spinner
+        android:id="@+id/spinner_onaybekleyenler_nokta"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_onaybekleyenler_bolum"
+        app:layout_constraintStart_toStartOf="@+id/spinner_onaybekleyenler_bolum"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_onaybekleyenler_bolum" />
+    <Spinner
+        android:id="@+id/spinner_onaybekleyenler_bolum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="43dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="@+id/spinner_onaybekleyenler_fakulte"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_onaybekleyenler_fakulte" />
+    <Spinner
+        android:id="@+id/spinner_onaybekleyenler_fakulte"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_onaybekleyenler_kurum"
+        app:layout_constraintStart_toStartOf="@+id/spinner_onaybekleyenler_kurum"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_onaybekleyenler_kurum" />
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Saat:"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:text="Tarih:"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Paylaşım Yeri,Tarih ve Saat Bilgisi"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Spinner
+        android:id="@+id/spinner_onaybekleyenler_il"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/lbl_showdialog_saat"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_showdialog_saat" />
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İl"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_onaybekleyenler_il"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/spinner_onaybekleyenler_il" />
+    <Button
+        android:id="@+id/btn_showistegecevap_onayla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="Onayla"
+        app:layout_constraintEnd_toStartOf="@+id/btn_showistegecevap_vazgec"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_onaybekleyenler_nokta" />
+    <Button
+        android:id="@+id/btn_showistegecevap_vazgec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Vazgeç"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_showistegecevap_onayla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_showistegecevap_onayla" />
+    <TextView
+        android:id="@+id/lbl_showdialog_tarih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="date"
+        android:text="Tarih seçmek için tıklayınız !"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:id="@+id/lbl_showdialog_saat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:text="Saat seçmek için tıklayınız !"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/lbl_showdialog_tarih"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.6" />
+    <Spinner
+        android:id="@+id/spinner_onaybekleyenler_kurum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="43dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/spinner_onaybekleyenler_il"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_onaybekleyenler_il" />
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="13dp"
+        android:text="Kurum"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_onaybekleyenler_kurum"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinner_onaybekleyenler_kurum"
+        app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fakülte"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_onaybekleyenler_fakulte"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/spinner_onaybekleyenler_fakulte" />
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:text="Bölüm"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_onaybekleyenler_bolum"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinner_onaybekleyenler_bolum" />
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konum"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_onaybekleyenler_nokta"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/spinner_onaybekleyenler_nokta" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b6"
+    tools:context=".aktivitiler.secim_activity">
+    <Spinner
+        android:id="@+id/spinner_secim_bolum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintStart_toStartOf="@+id/spinner_secim_fakulte"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_secim_fakulte" />
+    <Spinner
+        android:id="@+id/spinner_secim_fakulte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintStart_toStartOf="@+id/spinner_secim_kurum"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_secim_kurum" />
+    <Spinner
+        android:id="@+id/spinner_secim_kurum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintStart_toStartOf="@+id/spinner_secim_il"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_secim_il" />
+    <Spinner
+        android:id="@+id/spinner_secim_il"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/İl"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="254dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="8dp"
+        android:text="Lütfen İl, Üniversite,Fakülte ve Bölüm alanlarını doldurunuz"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/btn_secim_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Seçimi Tamamla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_secim_bolum" />
+    <TextView
+        android:id="@+id/İl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginEnd="48dp"
+        android:text="İl"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_secim_il"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_secim_il"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinner_secim_il"
+        app:layout_constraintVertical_bias="1.0" />
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="47dp"
+        android:text="Kurum"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_secim_kurum"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_secim_kurum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinner_secim_kurum" />
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="42dp"
+        android:text="Fakülte"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_secim_fakulte"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_secim_fakulte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinner_secim_fakulte" />
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="48dp"
+        android:text="Bölüm"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_secim_bolum"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_secim_bolum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinner_secim_bolum" />
+    <ProgressBar
+        android:id="@+id/secim_progresbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_secim_ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+    <CheckBox
+        android:id="@+id/checkBox_secim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Tanımlama bilgilerini değiştir !"
+        app:layout_constraintEnd_toEndOf="@+id/btn_secim_ok"
+        app:layout_constraintStart_toStartOf="@+id/btn_secim_ok"
+        app:layout_constraintTop_toBottomOf="@+id/btn_secim_ok" />
+</android.support.constraint.ConstraintLayout>

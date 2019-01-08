@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_2123"
+        app:layout_constraintTop_toTopOf="@+id/lbl_2123">
+
+        <TextView
+            android:id="@+id/lbl_teksatir_cevaplar_tarihi"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="tarih"
+            app:layout_constraintStart_toStartOf="@+id/lbl_teksatir_cevaplar_adi"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_teksatir_cevaplar_adi" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Döküman  / Kitap Adı:"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Paylaşım Yeri:"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/textView21"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Paylaşım Tarihi"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toStartOf="@+id/lbl_teksatir_cevaplar_tarihi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Yukarıdaki bilgilere göre paylaşım yerinde bulunmayı onaylıyor musunuz?"
+            android:textColor="@color/colorRed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_teksatir_cevaplar_yer" />
+
+        <ImageView
+            android:id="@+id/btn_teksatir_cevaplar_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:tint="@color/colorRed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_cevaplar_onayla"
+            app:layout_constraintTop_toBottomOf="@+id/textView23"
+            app:srcCompat="@drawable/ic_cancel" />
+
+        <ImageView
+            android:id="@+id/btn_teksatir_cevaplar_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:tint="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toStartOf="@+id/btn_cevaplar_onayla"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23"
+            app:srcCompat="@drawable/ic_check" />
+
+        <TextView
+            android:id="@+id/lbl_teksatir_cevaplar_adi"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="ad "
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbl_teksatir_cevaplar_yer"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="yer"
+            app:layout_constraintStart_toStartOf="@+id/lbl_teksatir_cevaplar_tarihi"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_teksatir_cevaplar_tarihi" />
+
+        <Button
+            android:id="@+id/btn_cevaplar_onayla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Paylaşım Gerçekleşti"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/btn_teksatir_cevaplar_no"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_teksatir_cevaplar_ok"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.card.MaterialCardView>
